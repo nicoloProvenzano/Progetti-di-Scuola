@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="stile.css" rel="stylesheet" type="text/css"/>
+    </head>  
+    <body>
+        <div>
+            <form action="reclamo.php" method="POST">
+                <br>
+                <div class="testo"> Username</div><input id="Username" type="text" name="username">
+                <br>
+                <div class="testo">gg/mm/aaaa</div><input id ="Data" type="date" name="data">
+                <br> 
+                <div class="testo">Codice ordine</div><input id ="codO" type="text" name="codO">
+                <br>
+                <div class="testo">Reclamo</div>
+                <select id="Reclamo" name="reclamo">
+                <option class="testoScelte" value="perdita">perdita</option>
+                <option class="testoScelte" value="danneggiato">danneggiato</option>
+                <option class="testoScelte" value="scambiato">scambiato</option>
+                </select>
+                <br>
+                <input type="submit">
+            </form>
+        </div>
+    </body>
+</html>

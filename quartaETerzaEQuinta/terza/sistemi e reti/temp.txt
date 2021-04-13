@@ -1,0 +1,40 @@
+REM exit
+
+REM start "PROVA" winword.exe c:\temp\test.bat
+
+REM start "BloccoNote" notepad.exe
+
+REM choice /M "vuoi eseguire WinWord" 
+
+REM ECHO hai la mamma zoccola
+
+REM start chrome
+
+REM start "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+
+REM start chrome 
+
+REM start chrome www.wikihow.it/Essere-Comunista
+
+REM start chrome www.youtube.com/channel/UC-lHJZR3Gqxm24_Vd_AJ5Yw
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+cls
+
+echo off
+
+REM set Giocatore = giovanni
+
+choice /M "s per google n per pewdiepie" /T 10 /D S
+
+REM echo %date% %time% %CD% %errorlevel%
+
+if %errorlevel% neq 2 (
+
+  start chrome 
+
+) else (
+
+  start chrome www.youtube.com/channel/UC-lHJZR3Gqxm24_Vd_AJ5Yw
+)

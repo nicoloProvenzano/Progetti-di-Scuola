@@ -1,0 +1,11 @@
+.messaggi{
+    
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#immagineBackground {
+    background-image: url("gigStelle.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

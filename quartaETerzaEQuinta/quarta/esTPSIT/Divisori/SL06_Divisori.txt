@@ -1,0 +1,41 @@
+
+   Scrivere in linguaggio java una classe Main che permetta di trovare tutti i divisori dei numeri
+   compresi tra 1 e un limite superiore letto da tastiera.
+   I divisori vanno memorizzati in una matrice, dove la i-esima riga conterrà i divisori del numero i+1 (si parte da zero).
+
+   Riassumendo:
+
+1) Scrivere una classe Main che:
+
+ 	- legge da tastiera il limite superiore dell'intervallo;
+
+	- crea una matrice di numeri interi nella quale saranno contenuti tutti i divisori dei numeri dell'intervallo
+	  di dimensione 10xlimite_superiore;
+
+	- imposta un ciclo che passa al thread ogni singolo numero di cui si vogliono trovare i divisori;
+
+	- visualizza la matrice dei divisori dei numeri interi compresi tra 1 limite superiore;
+
+
+
+2) Scrivere in linguaggio java una classe ThreadDivisori con le seguenti caratteristiche:
+
+ 	- la classe eredita (extends) la classe Thread;
+
+	- implementa un costruttore che prende in ingresso  un numero N di tipo int e un riferimento alla matrice di divisori
+	  ( li memorizza in un variabili private interne alla classe);
+
+	- implementa il metodo run 
+		public void run(){...} 
+	  che trova tutti i divisori del numero passato al costruttore e li memorizza nella matrice (alla riga N-1)
+
+
+
+Opzionale.
+
+Calcolare quanti secondi impiegano per le operazioni su descritte facendo uso del metodo
+
+	System.currentTimeMillis();
+
+che restituisce un long contenente i milli secondi trascorsi dal 1/1/1970.
+	  
