@@ -10,8 +10,8 @@ $pw = $pwa["password"];
   if (empty($pw)) {
      header("Refresh:0; url=signin.html");
   } else if ($pw == $password) {
-      setcookie("email", $email, strtotime("+1 year"));
-      setcookie("password", $password, strtotime("+1 year"));
+      setcookie("email", $email, strtotime("+1 minute"));
+      setcookie("password", $password, strtotime("+1 minute"));
       header("Refresh:0; url=home.php?");
   } else {
      header("Refresh:0; url=login.html");

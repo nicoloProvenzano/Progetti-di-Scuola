@@ -6,7 +6,6 @@ List<ChatClient> clients = [];
 
 void main() {
   ServerSocket.bind(InternetAddress.anyIPv4, 3000).then((server) {
-    print('server avviato');
     server.listen((client) {
       handleConnection(client);
     });

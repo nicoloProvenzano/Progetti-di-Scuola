@@ -22,27 +22,27 @@ class MessagesState extends State<Messages> {
     setState(() {});
   }
 
-  void socketConnector() {
+  // void socketConnector() {
     
-    Socket.connect("localhost", 3000)
-    .then((Socket sock) {
-      s = sock;
-      s.listen(
-        dataHandler, 
-        onError: errorHandler, 
-        onDone: doneHandler, 
-        cancelOnError: false);
-    })
-    .catchError((Error e) {
-      print("Unable to connect: $e");
-      exit(1);
-    });
+  //   Socket.connect("localhost", 3000)
+  //   .then((Socket sock) {
+  //     s = sock;
+  //     s.listen(
+  //       dataHandler, 
+  //       onError: errorHandler, 
+  //       onDone: doneHandler, 
+  //       cancelOnError: false);
+  //   })
+  //   .catchError((Error e) {
+  //     print("Unable to connect: $e");
+  //     exit(1);
+  //   });
 
-  // connect standard in to the socket 
+  // // connect standard in to the socket 
   // stdin.listen((data) => s.write(
   //   String.fromCharCodes(data).trim() + '\n'));
 
-   }
+  // }
 
 
 void dataHandler(data){
@@ -310,8 +310,8 @@ void doneHandler(){
           child:  sendBox()
         ),
 
+
       ],
     );
-    socketConnector();
   }
 }

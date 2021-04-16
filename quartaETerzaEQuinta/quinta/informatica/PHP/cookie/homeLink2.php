@@ -12,9 +12,7 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-
-	$email=$_COOKIE["email"];
-        $password=$_COOKIE["password"];
+        $email=$_COOKIE["email"];
 	echo"<div>$email</div>";
         echo"<div>link 2</div>";
 	echo"<div>";echo"<a href='linkHome.php/'>home</a>";echo"</div>";
